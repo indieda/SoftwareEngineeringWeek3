@@ -20,8 +20,8 @@ public class ScheduledTask extends Task implements Schedulable {
     
     ScheduledTask(String nam, String desc,Duration dura, LocalDateTime startTime) {
         super(nam, desc, dura, startTime);
-         System.out.println(getDeadline());
-         
+        
+           
 
     }
 }
