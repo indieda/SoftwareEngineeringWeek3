@@ -17,11 +17,11 @@ public class ScheduledTask extends Task implements Schedulable {
         return this.expected_duration;
     }
 
-    // Duration dura, LocalDateTime startTime
-    ScheduledTask(String nam, String desc) {
-        super(nam, desc, Duration.ofHours(1), LocalDateTime.of(2020, 8, 31, 8, 30));
-        // getDescription();
-        // setStartTime(startTime);
+    
+    ScheduledTask(String nam, String desc,Duration dura, LocalDateTime startTime) {
+        super(nam, desc, dura, startTime);
+         System.out.println(getDeadline());
+         
 
     }
 }
